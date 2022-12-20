@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Inika';
+  src: url("fonts/Inika/Inika-Regular.ttf");
+  font-weight: 400;
+}
+* {
+  box-sizing: border-box;
+  }
+body{
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header{
+  background-color: #edf2ec;
+  font-family: 'Inika', serif;
+  font-size: 16px ;
+  height: 134px;
+}
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+}
+html {
+    scroll-behavior: smooth; 
+  }
+.nav-list {
+  list-style: none;
+}
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  text-decoration: none;
+  color: #010201;
+  transition: color 0.5s;
+}
+.nav-link {
+  transition: .3s;
+}
+.nav-link:hover{
+  color: #E06733;
+  font-weight: bold;
+  font-size: 16px ;
+}
+.logo1{
+    position: absolute;
+    left: 111px;
+    top: 54.66px;
+}
+.logo2{
+    position: absolute;
+    left: 112px;
+    top: 52px;
+}
+.logo-text{
+    position: absolute;
+    left: 132.05px;
+    top: 56.04px;
+}
