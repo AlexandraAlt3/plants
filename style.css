@@ -24,6 +24,7 @@ body{
   display: flex;
   justify-content: flex-end;
   align-items: center; 
+  margin: 0px 108.83px 0px 0px;
 }
 html {
     scroll-behavior: smooth; 
@@ -38,6 +39,9 @@ html {
   color: #010201;
   transition: color 0.5s;
 }
+.header-container{
+    height: 134px;
+}
 .nav-link {
   transition: .3s;
 }
@@ -46,18 +50,6 @@ html {
   font-weight: bold;
   font-size: 16px ;
 }
-.logo1{
-    position: absolute;
-    left: 111px;
-    top: 54.66px;
-}
-.logo2{
-    position: absolute;
-    left: 112px;
-    top: 52px;
-}
 .logo-text{
-    position: absolute;
-    left: 132.05px;
-    top: 56.04px;
+  max-width: 58.13px;
 }
