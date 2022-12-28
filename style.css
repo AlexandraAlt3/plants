@@ -23,7 +23,6 @@ body{
   margin: 0 auto;
 }
 .nav-link {
-  padding: 0 20px;
   line-height: 50px;
   text-decoration: none;
   color: #010201;
@@ -33,6 +32,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 42px ;
 }
 .nav-link:hover{
   color: #E06733;
@@ -50,11 +50,14 @@ body{
   width: 79.17px;
   height: 21.04px;
 }
-
+.logo-text{
+  margin: 0;
+}
 .nav-list{
   display: flex;
   justify-content: flex-end; 
   list-style-type:none; 
+  margin: 0;
 }
 .nav-item{
   margin-right: 46px ;
