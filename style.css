@@ -3,6 +3,16 @@
   src: url("fonts/Inika/Inika-Regular.ttf");
   font-weight: 400;
 }
+@font-face {
+  font-family: 'latin';
+  src: url("fonts/latin/inter-v12-latin-regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'latin';
+  src: url("fonts/latin/inter-v12-latin-700.ttf");
+  font-weight: 700;
+}
 * {
   box-sizing: border-box;
   }
@@ -17,6 +27,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  color: #636060;
 }
 .wrapper{
   max-width: 1222px;
@@ -52,6 +63,7 @@ body{
 }
 .logo-text{
   margin: 0;
+  color: #010201;
 }
 .nav-list{
   display: flex;
@@ -64,4 +76,11 @@ body{
 }
 .nav-item:last-child{
   margin-right: 0px ;
+}
+/******************************************************************************/
+.welcome{
+  display: flex;
+}
+.main-welcome__title{
+  
 }
