@@ -29,6 +29,13 @@ body{
   /*justify-content: space-between;*/
   /*background-color: #EDF2EC;*/
 }
+p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+}
 .wrapper{
   max-width: 1222px;
   margin: 0 auto;
@@ -101,6 +108,9 @@ body{
   margin-bottom: 42px;
   margin-top: 0;
 }
+.colortext{
+  color: #499A18;
+}
 .main-welcome__subtitle{
   font-family: 'Inter';
   font-style: normal;
@@ -126,3 +136,35 @@ body{
   line-height: 20px;
   border-radius: 10px;
 }
+/******************************************************************************/
+.about-section__title{
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+}
+.about-section{
+  display: flex;
+  justify-content: space-between;
+  height: 666px;
+}
+.about-section__info {
+  margin-top: 161px;
+  width: 605px;
+}
+.about-section__title{
+  margin-top: 0;
+  margin-bottom: 40px;
+  width: 463px;
+}
+.png_housplant{
+  height: 479px;
+  width: 464px;
+  margin-top: 93px;
+}
+.about-section__paragraf{
+  margin-top: 0;
+  line-height: 30px;
+}
+/******************************************************************************/
