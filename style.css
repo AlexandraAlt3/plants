@@ -262,15 +262,13 @@ border: 1px #E3E1D5;
   margin-bottom: 10px;
 }
 /*************************************************/
-.prices{
-  height: 560px;
-}
 .wrapper-prices{
   display: flex;
   justify-content: space-between;
   height: 405px;
   margin-top: 38px;
   background: url(./assets/png/prices_leafs.png) no-repeat right bottom;
+  margin-bottom: 115px;
 }
 .prices-prices__title{
   font-family: 'Inter';
@@ -340,3 +338,50 @@ border: 1px #E3E1D5;
 .prices-prices__restangle button:last-child{
   margin-bottom: 0px ;
 }
+/********************************************************/
+.contacts{
+  background: #EDF2EC;
+  height: 550px;
+}
+.contacts__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.contact{
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499A18;
+  margin-top: 60px;
+  width: 195px;
+  height: 51px;
+  margin-left: 70px;
+}
+.select_city__p{
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.select_city{
+  width: 450px;
+  height: 50px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: #717171;
+  background: #D6E7D2;
+  border: 0ch;
+  margin-top: 128px;
+  margin-bottom: 352px;
+}
+.contact_woman{
+  width: 400px;
+  height: 496.99px;
+  margin-top: 53px;
+}
+/********************************************************/
