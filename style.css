@@ -414,6 +414,7 @@ border: 1px #E3E1D5;
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
+  height: 130px;
 }
 a{
   font-family: 'Inter';
@@ -427,9 +428,13 @@ a{
 .footer__data p{
   margin: 0;
 }
-.footer__social-list a{
+.social-icons{
+  display: flex;
+  list-style: none;
+}
+.social-icons li{
   margin-right: 20px;
 }
-.footer__social-list a:last-child{
+.social-icons li:last-child{
   margin-right: 0px;
 }
