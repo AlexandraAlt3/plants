@@ -78,6 +78,11 @@ h2{
 .logo-text{
   margin: 0;
   color: #010201;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
 }
 .nav-list{
   display: flex;
@@ -175,7 +180,10 @@ h2{
   line-height: 30px;
 }
 /******************************************************************************/
-
+.service{
+  background-color: #EDF2EC;
+  height: 1300px;
+}
 .service-content{
   display: flex;
   width: 1007px;
@@ -252,4 +260,83 @@ border: 1px #E3E1D5;
 }
 .services img{
   margin-bottom: 10px;
+}
+/*************************************************/
+.prices{
+  height: 560px;
+}
+.wrapper-prices{
+  display: flex;
+  justify-content: space-between;
+  height: 405px;
+  margin-top: 38px;
+  background: url(./assets/png/prices_leafs.png) no-repeat right bottom;
+}
+.prices-prices__title{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 60px;
+  margin-top: 0px;
+}
+.prices-prices{
+  width: 332px;
+  height: 391.01px;
+}
+.prices-text__title{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 38px;
+  text-align: right;
+  margin-top: 0px;
+}
+.prices-text{
+  width: 452px;
+}
+.prices-prices__restangle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 332px;
+  height: 282.01px;
+  border: 1px solid #717171;
+  border-radius: 20px;
+}
+.prices-text_gardens{
+  width: 161px;
+  height: 50px;
+  border-color: #E06733;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  border-radius: 10px;
+  margin-right: 38px;
+  color: #E06733;
+  margin-left: 290px;
+}
+.prices-prices__restangle button{
+  width: 250px;
+  height: 50px;
+  margin-left: 42px;
+  border: 0ch;
+  padding-right: 110px;
+  border-radius: 20px;
+  margin-bottom: 32px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  background-color: #EDF2EC;
+  /*background:url(./assets/png/prices_bottom/accordion_btn.png) no-repeat center right;*/
+}
+.prices-prices__restangle button:last-child{
+  margin-bottom: 0px ;
 }
