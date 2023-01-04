@@ -48,10 +48,14 @@ h2{
   margin: 0 auto;
 }
 .nav-link {
-  line-height: 50px;
   text-decoration: none;
   color: #010201;
   transition: color 0.3s;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 50px;
 }
 .header-container{
   display: flex;
@@ -63,6 +67,11 @@ h2{
   color: #E06733;
   font-weight: bold;
   font-size: 16px ;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 50px;
 }
 .header{
   background-color: #edf2ec;
@@ -148,6 +157,10 @@ h2{
   line-height: 20px;
   border-radius: 10px;
 }
+.learn-more:hover{
+  background-color: #E06733;
+  color: white;
+}
 /******************************************************************************/
 .about-section__title{
   font-family: 'Inika';
@@ -214,6 +227,10 @@ h2{
 }
 .service-content__button button:last-child{
   margin-right: 0px ;
+}
+.service-content__button button:hover{
+  background-color: #E06733;
+  color: white;
 }
 /************/
 .services{
@@ -337,6 +354,10 @@ border: 1px #E3E1D5;
 }
 .prices-prices__restangle button:last-child{
   margin-bottom: 0px ;
+}
+.prices-text_gardens:hover{
+  background-color: #E06733;
+  color: white;
 }
 /********************************************************/
 .contacts{
