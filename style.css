@@ -554,6 +554,104 @@ a{
     
   }
   /*****/
+  .service{
+    height: 1780px;
+  }
+  .services{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 190px;
+    /*height: 1426px;*/
+    width: 668px;
+    margin-bottom: 70px;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .services div:nth-child(odd){
+    margin-right: 100px;
+  }
+  .service-content{
+    flex-direction: column;
+  }
+  .services div{
+    width: 281px;
+    margin-right: 6px;
+    margin-bottom: 38px;
+  }
+  .services img{
+    width: 281px;
+  }
+  .service-content__button {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .service-content__title{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-size: 35px;
+    line-height: 46px;
+  }
+  .service-content__button{
+    margin-bottom: 40px;
+  }
+  .service-content__button button{
+    border-radius: 5px;
+  }
+  /******/
+  .prices-prices__title{
+    font-size: 35px;
+    line-height: 42px;
+  }
+  .prices-text{
+    width: 296px;
+    height: 410px;
+  }
+  .prices-text__title{
+    margin-top: 100px;
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 35px;
+  }
+  .prices-text_gardens{
+    margin-left: 130px;
+    margin-bottom: 34px;
+  }
+  /********/
+  .contacts{
+    height: 776px;
+    margin-bottom: 15px;
+  }
+  .contacts__wrapper{
+    flex-direction: column-reverse;
+  }
+  .contact{
+    order: 1;
+    margin-top: 67px;
+    margin-left: 248px;
+    margin-bottom: 100px;
+  }
+  .contact_woman{
+    height: 248.50px;
+    width: 200px;
+    margin-left: 254px;
+  }
+  .select_city{
+    margin: 0;
+  }
+  .select_city__p{
+    margin-left: 119px;
+    margin-bottom: 200px;
+  }
+/************/
+.footer__container{
+  flex-direction: column;
+  margin-left: 295px;
+  margin-top: 0;
+}
+.social-icons {
+  width: 188px;
+  margin-left: -35px;
+}
 }
 @media screen and (max-width:767px){
   .header__burger{
