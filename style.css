@@ -19,7 +19,10 @@
 html {
   scroll-behavior: smooth; 
 }
-
+html, body {
+  /* Убирает прокрутку по горизонтале, для мобильной версии */
+  overflow-x: hidden;
+}
 body{
   min-height: 100vh;
   margin: 0;
@@ -131,13 +134,7 @@ h2{
   top:50%;
   transform: translateY(-50%)
 }
-/***media start****/
-@media screen and (max-width:767px){
-  .header__burger{
-    display: block;
-  }
-}
-/******************************************************************************/
+/******/
 .welcome{
   height: 532px;
   background-color: #EDF2EC;
@@ -188,6 +185,7 @@ h2{
   font-size: 16px;
   line-height: 20px;
   border-radius: 10px;
+  background-color: transparent;
 }
 .learn-more:hover{
   background-color: #E06733;
@@ -251,6 +249,7 @@ h2{
   border-radius: 10px;
   margin-right: 38px;
   color: #E06733;
+  background-color: transparent;
 }
 .service-content__button{
   display: flex;
@@ -367,6 +366,7 @@ border: 1px #E3E1D5;
   margin-right: 38px;
   color: #E06733;
   margin-left: 290px;
+  background-color: transparent;
 }
 .prices-prices__restangle button{
   width: 250px;
@@ -470,3 +470,94 @@ a{
 .social-icons li:last-child{
   margin-right: 0px;
 }
+/***media start****/
+@media screen and (max-width:780px){
+  .wrapper{
+    max-width: 668px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .header-container{
+    margin: 35px 0;
+  }
+  .header{
+    height: 113px;
+  }
+  .welcome{
+    height: 420px;
+  }
+  .main-welcome {
+    flex-flow: wrap;
+  }
+  .main-welcome__title{
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .main-welcome__subtitle{
+    margin-bottom: 30px;
+  }
+  .main-welcome__png{
+    margin-top: 40px;
+    width: 280px;
+    height:254.15px;
+  }
+  .main-welcome__section{
+    width: 346px;
+  }
+  .main-welcome__leafs{
+    order: 2;
+    margin: 0;
+  }
+  .main-welcome__section{
+    order: 1;
+    width: 346px;
+    height: 310px;
+    margin: 0;
+  }
+  .main-welcome__title{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 50px;
+    color: #717171;
+  }
+  .main-welcome__subtitle{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #636060;
+  }
+  .about-section{
+    flex-direction: column;
+    height: 783px;
+  }
+  .about-section__title{
+    color:#E06733;
+    margin-left: 172px;
+    font-size: 35px;
+    line-height: 46px;
+    margin-bottom: 50px;
+  }
+  .about-section__info{
+    margin-top: 40px;
+  }
+  .about-section__paragraf{
+    margin-bottom: 40px;
+    width: 668px;
+    line-height: 30px;
+  }
+  .png_housplant{
+    margin-top: 0;
+    margin-left: 209px;
+    width: 250px;
+    height: 258px;
+    margin-bottom: 95px;
+    
+  }
+  /*****/
+}
+@media screen and (max-width:767px){
+  .header__burger{
+    display: block;
+  }
+}
+/******************************************************************************/
