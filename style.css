@@ -47,7 +47,7 @@ h2{
   line-height: 52px;
 }
 .wrapper{
-  max-width: 1222px;
+  max-width: 1252px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -63,6 +63,7 @@ h2{
 }
 .header-container{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   margin-top: 42px ;
@@ -85,6 +86,7 @@ h2{
 }
 .logo{
   display: flex;
+  flex-wrap: wrap;
   width: 79.17px;
   height: 21.04px;
 }
@@ -99,6 +101,7 @@ h2{
 }
 .nav-list{
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end; 
   list-style-type:none; 
   margin: 0;
@@ -175,8 +178,6 @@ h2{
   margin-top: 0;
 }
 .main-welcome__png{
-  width: 448.4px;
-  height: 407.36px;
   margin-top: 62px;
 }
 .learn-more{
@@ -206,7 +207,7 @@ h2{
 .about-section{
   display: flex;
   justify-content: space-between;
-  height: 666px;
+  margin-bottom: 94px;
 }
 .about-section__info {
   margin-top: 161px;
@@ -218,8 +219,6 @@ h2{
   width: 463px;
 }
 .png_housplant{
-  height: 479px;
-  width: 464px;
   margin-top: 93px;
 }
 .about-section__paragraf{
@@ -233,8 +232,6 @@ h2{
 }
 .service-content{
   display: flex;
-  width: 1007px;
-  height: 94px;
 }
 .service-content__title{
   width: 306px;
@@ -259,6 +256,7 @@ h2{
   display: flex;
   margin-top: 69px;
   margin-left: 142px;
+  margin-bottom: 90px;
 }
 .service-content__button button:last-child{
   margin-right: 0px ;
@@ -269,27 +267,21 @@ h2{
 }
 /************/
 .services{
-  display: flex;
-  flex-wrap: wrap;
-  width: 1222px;
-  height: 955px;
-  margin-top: 117px;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  column-gap:  116px;
+  row-gap:  55px;  
+  margin-bottom: 90px;
+}
+.services__card{
+  flex-direction: column;
+  grid-column: span 2;
 }
 .services div{
-  width: 330px;
-  height: 450px;
   text-align: center;
-  margin-right: 116px;
-  margin-bottom: 55px;
-}
-.services div{
-border: 1px #E3E1D5;
-}
-.services div:nth-child(3){
-  margin-right: 0px ;
-}
-.services div:last-child{
-  margin-right: 0px ;
+  border: 1px solid #E3E1D5;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .services h3{
   font-family: 'Inter';
@@ -317,7 +309,6 @@ border: 1px #E3E1D5;
 .wrapper-prices{
   display: flex;
   justify-content: space-between;
-  height: 405px;
   margin-top: 38px;
   background: url(./assets/png/prices_leafs.png) no-repeat right bottom;
   margin-bottom: 115px;
@@ -414,7 +405,6 @@ border: 1px #E3E1D5;
   margin-top: 60px;
   width: 195px;
   height: 51px;
-  margin-left: 70px;
 }
 .select_city__p{
   padding: 0;
@@ -451,6 +441,7 @@ border: 1px #E3E1D5;
   justify-content: space-between;
   margin-top: 40px;
   height: 130px;
+  padding: 0 15px;
 }
 a{
   font-family: 'Inter';
@@ -475,11 +466,97 @@ a{
   margin-right: 0px;
 }
 /***media start****/
+@media screen and (max-width:1235px){
+  .services{
+    column-gap: 20px;
+  }
+}
+@media screen and (max-width:1035px){
+  .service{
+    height: auto;
+  }
+  .services{
+    display: grid;
+    height: 100%;
+    grid-gap: 100px;
+  }
+  .services__card{
+    grid-column: span 3;
+  }
+  .services div{
+    border: 0ch;
+  }
+  .select_city{
+    width: 350px;
+  }
+  @media screen and (max-width:965px){
+    .select_city{
+      width: 300px;
+    }
+  }
+  @media screen and (max-width:915px){
+    .main-welcome__section{
+      margin-top: 30px;
+    }
+    .main-welcome__png{
+      margin-top: 0;
+    }
+    .about-section__title{
+      text-align: center;
+      width: auto;
+    }
+    .service-content__button{
+      margin-left:0;
+    }
+    .about-section{
+      flex-wrap:wrap;
+    }
+    .png_housplant{
+      margin-top: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .about-section__info{
+      width: auto;
+      margin-top: 35px;
+    }
+    .contacts{
+      height:auto;
+    }
+    .contacts__wrapper{
+      flex-direction: column-reverse;
+    }
+    .contact{
+      order: 3;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .select_city{
+      margin: 0;
+
+    }
+    .contact_woman{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }  
+  /*********************************************/
+  @media screen and (max-width:830px){
+    .welcome{
+      height: 590px;
+    }
+    .prices-text{
+      margin-right: 5px;
+    }
+    .prices-text_gardens{
+        margin-left: 230px;
+    }
+  }
+/*********************************************************************/
 @media screen and (max-width:780px){
   .wrapper{
-    max-width: 668px;
+    max-width: 700px;
     margin: 0 auto;
-    padding: 0;
   }
   .header-container{
     margin: 35px 0;
@@ -532,26 +609,26 @@ a{
   }
   .about-section{
     flex-direction: column;
-    height: 783px;
+    margin-bottom: 0;
   }
   .about-section__title{
     color:#E06733;
-    margin-left: 172px;
     font-size: 35px;
     line-height: 46px;
     margin-bottom: 50px;
+    margin-left: 172px;
+    text-align: left;
   }
   .about-section__info{
     margin-top: 40px;
   }
   .about-section__paragraf{
-    margin-bottom: 40px;
+    margin-bottom: 70px;
     width: 668px;
     line-height: 30px;
   }
   .png_housplant{
     margin-top: 0;
-    margin-left: 209px;
     width: 250px;
     height: 258px;
     margin-bottom: 95px;
@@ -564,26 +641,21 @@ a{
   .services{
     margin-left: 0px;
     margin-right: 0px;
-    margin-top: 190px;
     /*height: 1426px;*/
-    width: 668px;
-    margin-bottom: 70px;
-    flex-wrap: wrap;
+    display: grid;
     height: 100%;
+    grid-gap: 62px;
+    column-gap: 106px;
   }
-  .services div:nth-child(odd){
-    margin-right: 100px;
+  .services__card{
+    grid-column: span 3;
+  }
+  .services div{
+    margin-right: 6px;
+    overflow: hidden;
   }
   .service-content{
     flex-direction: column;
-  }
-  .services div{
-    width: 281px;
-    margin-right: 6px;
-    margin-bottom: 38px;
-  }
-  .services img{
-    width: 281px;
   }
   .service-content__button {
     margin-left: 0;
@@ -607,14 +679,15 @@ a{
     line-height: 42px;
   }
   .prices-text{
+    margin-top: 30px;
     width: 296px;
-    height: 410px;
+    height: 440px;
   }
   .prices-text__title{
-    margin-top: 100px;
     font-size: 25px;
     line-height: 35px;
     margin-bottom: 35px;
+    margin-top: 75px;
   }
   .prices-text_gardens{
     margin-left: 130px;
@@ -622,7 +695,6 @@ a{
   }
   /********/
   .contacts{
-    height: 776px;
     margin-bottom: 15px;
   }
   .contacts__wrapper{
@@ -630,7 +702,7 @@ a{
   }
   .contact{
     order: 1;
-    margin-top: 67px;
+    margin-top: 0px;
     margin-left: 248px;
     margin-bottom: 100px;
   }
@@ -640,26 +712,106 @@ a{
     margin-left: 254px;
   }
   .select_city{
-    margin: 0;
+    margin-bottom: 200px;
+    width: 450px;
+
   }
   .select_city__p{
     margin-left: 119px;
-    margin-bottom: 200px;
   }
 /************/
 .footer__container{
   flex-direction: column;
   margin-left: 295px;
   margin-top: 0;
-}
+  }
 .social-icons {
   width: 188px;
   margin-left: -35px;
+  }
 }
+@media screen and (max-width:660px){
+  .main-welcome {
+    flex-wrap: nowrap;
+  }
+  .about-section__paragraf{
+    width: auto;
+  }
+  .footer__container{
+    margin-right: 50px;
+  }
+  .services{
+    grid-gap: 51px;
+    column-gap: 40px;
+  }
+  .wrapper-prices{
+    flex-direction: column;
+  }
+  .prices-text{
+    width: auto;
+    height: 253px;
+  }
+  .prices-text__title{
+    margin-top: 20px;
+    text-align: center;
+  }
+  .select_city{
+    margin-bottom: 50px;
+  }
 }
-@media screen and (max-width:767px){
+@media screen and (max-width:590px){
+  .about-section__title{
+    margin-left: 0px;
+  }
+  .png_housplant{
+    margin-left: 150px;
+  }
+  .select_city{
+    width: 350px;
+  }
+  .contact{
+    margin-left: 180px;
+  }
+  .contact_woman{
+    margin-left: 150px;
+  }
+  .footer__container{
+    margin-left: 171px;
+  }
+}
+@media screen and (max-width:566px){
+  .main-welcome__png{
+    height: 200px;
+    width: auto;
+  }
+}
+@media screen and (max-width:520px){
+  .main-welcome__title{
+    margin-top: 11px;
+    margin-bottom: 16px;
+  }
+  .services{
+    grid-gap: 31px;
+    column-gap: 6px;
+  }
+}
+
+@media screen and (max-width:508px){
+  .main-welcome__subtitle{
+    margin-bottom: 10px;
+  }
+  .main-welcome__png{
+    height: 140px;
+  }
+}
+
+@media screen and (max-width:451px){
   .header__burger{
     display: block;
+  }
+  .wrapper{
+    padding: 0 5px;
+    width: 82%;
   }
   .nav{
     position:fixed;
@@ -710,13 +862,9 @@ a{
   .header__nav-close-line:last-child{
     transform: translateY(-50%) rotate(-45deg);
   }
-  .wrapper{
-    width: 302px;
-  }
   .header {
     height: 96px;
   }
-  /************************/
   .welcome{
     height: 300px;
   }
@@ -738,6 +886,111 @@ a{
   .main-welcome__png{
     display: none;
   }
+  .png_housplant{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .services__card{
+    grid-column: span 6 ;
+  }
+  .service{
+    height:auto;
+  }
+  .contact{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .select_city__p{
+    margin-left: auto;
+  }
+  .contact_woman{
+    margin-left: auto;
+  }
+  .footer__container{
+    margin: auto;
+  }
+}
+/**********************************************************/
+@media screen and (max-width:380px){
+  .header__burger{
+    display: block;
+  }
+  .wrapper{
+    padding: 0 5px;
+    width: 88%;
+  }
+  .nav{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 75px;
+    background-color: #EDF2EC;
+    transform: translateX(100%);
+    transition: .2s all linear;
+  }
+  .nav_active{
+    transform: translateX(0);
+  }
+  .nav-list{
+    flex-direction: column;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .nav-link{
+    font-size: 24px;
+    color:#499A18
+  }
+  .nav-link:hover, .nav-link:focus {
+    font-size: 24px;
+  }
+  .header__nav-close{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+  }
+  .header__nav-close-line{
+    width: 100%;
+    display: block;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+  }
+  .header__nav-close-line:first-child{
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .header__nav-close-line:last-child{
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  .header {
+    height: 96px;
+  }
+  /************************/
+  .main-welcome__title{
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 20.36px;
+    margin-top: 24px;
+  }
+  .main-welcome__subtitle{
+    width: 314.52px;
+    margin-bottom: 29px ;
+  }
+  .learn-more {
+    width: 100px;
+    height: 34.14px;
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .main-welcome__png{
+    display: none;
+  }
   /**************************/
   .about-section{
     height: 516px;
@@ -747,7 +1000,8 @@ a{
     width: 288px;
     font-size: 25px;
     line-height: 33px;
-    margin-bottom: 3.55px;
+    margin-bottom: 13px;
+    margin-top: -10px;
   }
   .about-section__paragraf{
     font-size: 15px;
@@ -792,15 +1046,11 @@ a{
     height: 3150px;
   }
   .services{
-    flex-direction: column;
-    margin-top: 158px;
-    margin-left: 25px;
+   grid-column: span 3;
   }
   .services div{
-    margin-bottom: 34px;
-    margin-right: 0;
-    height: 450px;
-    width: 280px;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
   }
   .services div:nth-child(odd){
     margin-right: 0;
@@ -828,6 +1078,7 @@ a{
   }
   .wrapper-prices{
     flex-direction: column;
+
   }
   .prices-prices{
     width: 230px;
@@ -850,7 +1101,7 @@ a{
     height: 77px;
     font-size: 20px;
     line-height: 35px;
-    margin-top: 0;
+    margin-top: -112px;
     margin-left: 49px;
     text-align: center;
     margin-bottom: 14px;
@@ -884,7 +1135,7 @@ a{
   .select_city__p {
     margin-left: 0;
     margin-bottom: 0;
-}
+  }
   .contact_woman{
     width: 100px;
     height: 124px;
@@ -894,9 +1145,35 @@ a{
   .footer__container{
     margin-left: 85px;
   }
-  /**********************/
-  
 
 }
+}
 
-/******************************************************************************/
+@media screen and (max-width:363px){
+  .about-section__paragraf{
+    width:auto;
+    height: auto;
+  }
+  .about-section{
+    flex-wrap: nowrap;
+  }
+  .about-section__title{
+    margin: 0px;
+    width: auto;
+  }
+  .main-welcome__subtitle{
+    width: auto;
+    height: auto;
+  }
+  .about-section__paragraf{
+    width: auto;
+    height: auto;
+  }
+  .select_city{
+    width: 250px;
+  }
+  .prices-prices__restangle{
+    margin-left: 0px;
+  }
+}
+/********************************/
