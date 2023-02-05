@@ -249,9 +249,20 @@ h2{
   line-height: 26px;
   border-radius: 10px;
   margin-right: 38px;
+}
+.gardens{
   color: #E06733;
   background-color: transparent;
 }
+.lawn{
+  color: #E06733;
+  background-color: transparent;
+}
+.planting{
+  color: #E06733;
+  background-color: transparent;
+}  
+
 .service-content__button{
   display: flex;
   margin-top: 69px;
@@ -1177,3 +1188,19 @@ a{
   }
 }
 /********************************/
+.carden_care_on{
+  filter: blur(2px);
+}
+.planting_img_on{
+  filter: blur(2px);
+}
+.lawn_care_on{
+  filter: blur(2px);
+}
+.imgBlur{
+  filter: blur(2px);
+}
+.buttonActive{
+  background-color: #E06733;
+  color: white;
+}
